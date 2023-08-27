@@ -9,11 +9,13 @@
     display: flex;
     justify-content: space-between;
     padding: 29px 131px;
+    position: relative;
     height: 107px;
     width: 100%;
     align-items: center;
     text-align: center;
 }
+
 .header-icon{
     display: none;
 }
@@ -87,6 +89,7 @@
     border-radius: 2px;
     color: #fff;
     cursor: pointer;
+    font-weight: 500;
     font-size: 14px;
     align-items: center;
     color: #e9e9e9;
@@ -282,7 +285,7 @@
 }
 .main-second-name a{
     text-decoration: none;
-    padding: 16px 41px;
+    padding: 15.5px 41px;
     text-align: center;
     color: #cbaa5d;
     font-size: 16px;
@@ -732,6 +735,37 @@
     color: #fff;
     transition: 0.5s;
 }
+.header-list{
+     background-color: #fff;
+     position: fixed;
+     display: flex;
+     z-index: 5;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     width: 320px;
+     max-width: 100%;
+     display: none;
+}
+.header-list-item-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    padding-bottom: 60px;
+    display: block;
+
+}
+.header-list-item{
+    align-items: center;
+    list-style: none;
+    padding: 50px;
+}
+.header-list-icon{
+    font-size: 26px;
+    left: 0;
+    position: absolute;
+    padding: 10px;
+}
 .header-overlay{
     position:fixed;
     top: 0;
@@ -739,6 +773,15 @@
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.3);
-    z-index: 4;
+    z-index: 2;
+    display: none;
+   }
+.open{
+    display: block;
+}
+.btn-seeroom{
     display: none;
 }
+
+
+
